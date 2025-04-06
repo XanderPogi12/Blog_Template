@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanto Meryenda</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color:rgb(240, 182, 131);
+        }
+
+        header {
+            background-color:orangered;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav {
+            background-color:rgb(255, 123, 0);
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .top1 {
+            
+            background: url(img/resto.jpg);
+            background-size: cover;
+            height: 800px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color:orangered;
+            text-align: center;
+            font-size: 40px;
+            font-style: italic  ;
+            
+            
+        }
+
+        .menuto {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .items {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .item2 {
+            border: 1px solid #ddd;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        footer {
+            background-color:orangered;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+        .img-kwekkwek{
+            height: 300px;
+        }
+        .img-isaw{
+            height: 300px;
+        }
+        .img-ball{
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🍴 Kanto Meryenda</h1>
+        <p>Kung saan nga may masarap, Ay dapat pinupuntahan!</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="top1">
+        <div>
+            <img>
+            <h2>Bagong Luto at Bagong Gawa!</h2>
+            <p>Serving Since 2003</p>
+        </div>
+    </section>
+
+    <main class="menuto">
+        <section id="menu">
+            <h2>Espesyal To!</h2>
+            <div class="items">
+                <div class="item2">
+                    <img class="img-kwekkwek" src="img/Kwekkwek2.jpg" alt="Street Food"> 
+                    <h3>Espesyal To #1</h3>
+                    <p>Kwek-Kwek ni Mame</p>
+                    <p>30 Pesos Only</p>
+                </div>
+                <div class="item2">
+                    <img class="img-isaw" src="img/isaw.jpg" alt="Street Food"> 
+                    <h3>Espesyal To #2</h3>
+                    <p>Isaw ng Baboy</p>
+                    <p>10 Pesos Only</p>
+                </div>
+                <div class="item2">
+                    <img class="img-ball" src="img/ball.jpg" alt="Street Food">
+                    <h3>Espesyal To #3</h3>
+                    <p>Fish Ball</p>
+                    <p>5 Pesos Only</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>Tungkol Samin Ba?</h2>
+            <p>Ang Kanto Meryenda ay itinayo ng aming mga magulang noong 2003, na ngayon ay minana namin sampong mag kakapatid.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Ito ang Conatct Namin!</h2>
+            <p>📞 0930 664 2894</p>
+            <p>📧 kantomeryenda@gmail.com</p>
+            <p>📍 13 Main Street, Cabanatuan City, 3100</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2003 Kanto Meryenda. Bagong Luto</p>
+        <div class="social-media">
+            <a href="#">Facebook</a> | 
+            <a href="#">Instagram</a> | 
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+</body>
+</html>
